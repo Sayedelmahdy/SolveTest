@@ -41,5 +41,10 @@ namespace WinFormsApp2
             txt3.Text = Convert.ToString(Convert.ToInt32(txt1.Text) / Convert.ToInt32(txt2.Text));
             this.Refresh();
         }
+        private void model(object sender, EventArgs e)
+        {
+            txt3.Text = Convert.ToString(Convert.ToInt32(txt1.Text) % Convert.ToInt32(txt2.Text));
+            this.Refresh();
+        }
     }
 }
