@@ -6,31 +6,6 @@ namespace WinFormsApp2
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
-        /// 
         Label label1 = new Label();
         Label label2 = new Label();
         Label label3 = new Label();
@@ -41,10 +16,9 @@ namespace WinFormsApp2
         Button btn2 = new Button();
         Button btn3 = new Button();
         Button btn4 = new Button();
+        Button btn5 = new Button();
         private void InitializeComponent()
         {
-            
-
            // label
             label1.Location = new Point(60,20);
             label1.Text = "number 1";
@@ -58,12 +32,10 @@ namespace WinFormsApp2
             label3.Text = "Result";
             label3.Size = new Size(80, 50);
             label3.ForeColor = Color.Red;
-
             // textbox
             txt1.Location = new Point(140, 20);
             txt2.Location = new Point(340, 20);
             txt3.Location = new Point(540, 20);
-
             // button 
             btn1.Location = new Point(60, 80);
             btn1.Text = "Add";
@@ -81,16 +53,13 @@ namespace WinFormsApp2
             btn4.Text = "Divid";
             btn4.Width = 80;
             btn4.Click += new System.EventHandler(divid);
-
-
-
-
+            btn5.Location = new Point(460, 80);
+            btn5.Text = "Models";
+            btn5.Width = 80;
+            btn5.Click += new System.EventHandler(model);
             //form
             this.Text = "Menu Demo";
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-
             //Controls
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -102,9 +71,8 @@ namespace WinFormsApp2
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn5);
         }
-
-        #endregion
     }
 }
 
